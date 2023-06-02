@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+
+# Build
+dist/
+target/
+
+# IDE
+.fleet/
+.idea/
+.vscode/
+
+# Other
+Cargo.lock

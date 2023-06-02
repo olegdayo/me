@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: ["master", "ci"]
+  pull_request:
+    branches: ["master", "ci"]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup Toolchain
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        target: wasm32-unknown-unknown
+
+    - name: Install Trunk
+      uses: jetli/trunk-action@v0.1.0
+      with:
+        version: 'latest'
+
+    - name: Build
+      run: trunk build
+
+    - name: Test
+      run: cargo test --verbose --verbose
+
+    - name: Check Format
+      run: cargo fmt --all -- --check
+
+    - name: Check Warnings
+      run: cargo clippy -- -D warnings

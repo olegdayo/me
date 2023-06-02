@@ -1,0 +1,24 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+
+  background: linear-gradient(to bottom right, #ffffff, #fff6d5);
+  font-size: 1.5rem;
+}
+
+main {
+  color: #000000;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.profile.profile {
+  height: 60%;
+  width: auto;
+}
