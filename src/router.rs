@@ -14,7 +14,9 @@ pub enum Route {
 pub fn switch(route: Route) -> Html {
     match route {
         Route::General => html! {
-            <General/>
+            <>
+                <General/>
+            </>
         },
         Route::NotFound => html! {
             <>
