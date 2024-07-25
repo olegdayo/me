@@ -5,10 +5,10 @@ use yew_router::{HashRouter, Switch};
 #[function_component(App)]
 pub fn app() -> Html {
     html! {
-        <body>
+        <main>
             <HashRouter>
                 <Switch<Route> render={switch} />
             </HashRouter>
-        </body>
+        </main>
     }
 }
