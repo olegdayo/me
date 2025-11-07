@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="icon" href="assets/images/gopher.ico" sizes="192x192"/>
+    <link rel="stylesheet" href="/me/index-bd8b0dbb5b120e75.css" integrity="sha384-mhSmzT3PEtIUgdwae/0tXOjoG6vnte6SKre5xOsoZFAO8NqcVpDpGOZ8OjZGuWmX"/>
+    
+    
+<script type="module">
+import init, * as bindings from '/me/me-6606b02658a5aba8.js';
+const wasm = await init({ module_or_path: '/me/me-6606b02658a5aba8_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+
+    <title>Oleg's personal page</title>
+<link rel="modulepreload" href="/me/me-6606b02658a5aba8.js" crossorigin="anonymous" integrity="sha384-crI2Z3rOQB3k5IEK5Hj1GVNv23hbFhkP1O6JEg92Wal1Kf6JpIN9FsplR3mTsMrL"><link rel="preload" href="/me/me-6606b02658a5aba8_bg.wasm" crossorigin="anonymous" integrity="sha384-O5xIukLCvznZxB0k5k5qRf8dZhfZB5pWO+PoQ3ferD+z0jI+4b9ki5cvYhv4nwLr" as="fetch" type="application/wasm"></head>
+
+</html>
