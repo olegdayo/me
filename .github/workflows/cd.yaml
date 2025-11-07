@@ -37,6 +37,9 @@ jobs:
           path: ./dist
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: crazy-max/ghaction-github-pages@v3
         with:
-          folder: dist
+          target_branch: gh-pages
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
