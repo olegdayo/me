@@ -1,70 +1,32 @@
+use crate::router::Route;
 use yew::prelude::*;
+use yew_router::prelude::*;
 
 #[function_component(General)]
 pub fn general() -> Html {
     html! {
-        <>
-            <div class="profile">
-                <p> {"Hey there! The name's Oleg"} </p>
-                <img class="profile" src={ "assets/images/profile.png" } alt="Profile" />
+        <div class="general landing">
+            <div class="landing-content">
+                <h1>{"Hey there! The name's Oleg"}</h1>
+                <img class="landing-photo" src="assets/images/profile.png" alt="Oleg Sidorenkov" />
+                <a class="contact-link" href="https://t.me/olegdayo">
+                    <img src="assets/images/telegram.png" alt="" width="32" height="32" />
+                    <span>{"Contact me"}</span>
+                </a>
+                <nav class="page-links" aria-label="Main navigation">
+                    <Link<Route> to={Route::CV}>
+                        <img class="navigation-icon" src="assets/images/cv.png" alt="" />
+                        <span>{"CV"}</span>
+                    </Link<Route>>
+                    <Link<Route> to={Route::Talks}>
+                        <img class="navigation-icon" src="assets/images/microphone.png" alt="" />
+                        <span>{"Talks"}</span>
+                    </Link<Route>>
+                </nav>
             </div>
-        </>
-    }
-}
-
-#[function_component(Profile)]
-fn profile() -> Html {
-    html! {}
-}
-
-#[function_component(WhoAmI)]
-fn whoami() -> Html {
-    html! {}
-}
-
-#[function_component(Contacts)]
-fn contacts() -> Html {
-    html! {}
-}
-
-#[function_component(Carrier)]
-fn carrier() -> Html {
-    html! {}
-}
-
-#[function_component(Education)]
-fn education() -> Html {
-    html! {}
-}
-
-#[function_component(AdditionalEducation)]
-fn additional_education() -> Html {
-    html! {}
-}
-
-#[function_component(Languages)]
-fn loanguages() -> Html {
-    html! {}
-}
-
-#[function_component(Skills)]
-fn skills() -> Html {
-    html! {}
-}
-
-#[function_component(OlimpiadsAndConferences)]
-fn tech_stack() -> Html {
-    html! {}
-}
-
-#[function_component(Hobbies)]
-pub fn hobbies() -> Html {
-    html! {}
-}
-
-#[function_component(VisitorsCount)]
-fn visitors_count() -> Html {
-    html! {
-        <img alt={"Visitors' count"} src={"https://moe-counter.glitch.me/get/@offluck-web-page?theme=gelbooru"}/>
+            <footer class="visitors">
+                <img alt="Visitors' count" src="https://count.getloli.com/get/@olegdayo?theme=gelbooru" />
+            </footer>
+        </div>
     }
 }
