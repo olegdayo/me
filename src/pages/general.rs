@@ -9,6 +9,17 @@ pub fn general() -> Html {
             <div class="landing-content">
                 <h1>{"Hey there! The name's Oleg"}</h1>
                 <img class="landing-photo" src="assets/images/profile.png" alt="Oleg Sidorenkov" />
+                <section class="landing-summary" aria-labelledby="tldr-heading">
+                    <h2 id="tldr-heading">{"TL; DR:"}</h2>
+                    <ul>
+                        <li>{"Senior SWE / Tech Lead at VK Cloud KMS"}</li>
+                        <li>{"HSE BSc + MSc SE alumni"}</li>
+                        <li>{"HSE OS instructor"}</li>
+                        <li>{"OSS contributor"}</li>
+                        <li>{"Dev: Go; Rust; PostgreSQL; Kafka"}</li>
+                        <li>{"Ops: Linux; FreeBSD; Shell; Kubernetes; Terraform; Vault"}</li>
+                    </ul>
+                </section>
                 <a class="contact-link" href="https://t.me/olegdayo">
                     <img src="assets/images/telegram.png" alt="" width="32" height="32" />
                     <span>{"Contact me"}</span>

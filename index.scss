@@ -336,3 +336,24 @@ body {
     object-fit: contain;
   }
 }
+
+.landing-summary {
+  width: fit-content;
+  max-width: 100%;
+  margin: 24px auto 0;
+  text-align: left;
+
+  h2 {
+    margin: 0 0 8px;
+    font-size: 1.25rem;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 24px;
+  }
+
+  li {
+    margin: 4px 0;
+  }
+}
