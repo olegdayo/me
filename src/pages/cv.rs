@@ -18,7 +18,7 @@ pub fn cv() -> Html {
                 <Link<Route> to={Route::General}>{"← Back"}</Link<Route>>
                 <a class="pdf-download" href="assets/images/CV.pdf" download="OlegSidorenkovCV.pdf">
                     <img src="assets/images/pdf.png" alt="" width="32" height="32" />
-                    <span>{"Save as PDF"}</span>
+                    <span>{"Export as PDF"}</span>
                 </a>
             </nav>
             <article class="cv">
