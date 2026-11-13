@@ -19,8 +19,8 @@ pub fn general() -> Html {
                         <li>{"HSE Operating Systems course instructor"}</li>
                         <li>{"Open-source contributor: Vault, Terraform, K8s stuff"}</li>
                         <li>{"Public speaker at IT conferences, tech writer: Go, UNIX"}</li>
-                        <li>{"Dev: Go, Rust, PostgreSQL, Kafka"}</li>
-                        <li>{"Ops: Linux, FreeBSD, Shell, Kubernetes, Terraform, Vault"}</li>
+                        <li>{"Development: Go, Rust, PostgreSQL, Kafka"}</li>
+                        <li>{"Operations: Linux, FreeBSD, Shell, Kubernetes, Terraform, Vault"}</li>
                     </ul>
                 </section>
                 </div>
