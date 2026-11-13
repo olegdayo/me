@@ -37,7 +37,9 @@ pub fn talks() -> Html {
             </header>
             <section class="talk-list" aria-label="Talks">
                 <Talk title="Contextual Talk" tags="Go" description="We will explore the history and internals of the context package as well as best practices of working with it.">
-                    <img alt="Contextual Talk" src="https://img.youtube.com/vi/heXa5PnY200/maxresdefault.jpg" />
+                    <a class="talk-thumbnail" href="https://youtu.be/heXa5PnY200">
+                        <img alt="Watch Contextual Talk (Russian)" src="https://img.youtube.com/vi/heXa5PnY200/maxresdefault.jpg" />
+                    </a>
                     <a href="https://youtu.be/heXa5PnY200">{"Watch recording (Russian)"}</a>
                     <a href="https://github.com/olegdayo/talks/tree/master/contextual-talk">{"Materials"}</a>
                 </Talk>
@@ -53,7 +55,9 @@ pub fn talks() -> Html {
             <section aria-labelledby="papers-heading">
                 <h2 id="papers-heading">{"Papers"}</h2>
                 <Talk title="Container under the Hood or how 4 SysCalls Reshaped the Approaches to Operate Software" tags="Go · UNIX/Linux" description="We will explore the history and internals of UNIX/Linux containers.">
-                    <img alt="Container under the Hood or how 4 SysCalls Reshaped the Approaches to Operate Software" src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/1cb/d05/aca/1cbd05aca1dc01ad4cafb6abd040eaf4.png" />
+                    <a class="talk-thumbnail" href="https://habr.com/p/1004422">
+                        <img alt="Read Container under the Hood or how 4 SysCalls Reshaped the Approaches to Operate Software (Russian)" src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/1cb/d05/aca/1cbd05aca1dc01ad4cafb6abd040eaf4.png" />
+                    </a>
                     <a href="https://habr.com/p/1004422">{"Read article (Russian)"}</a>
                 </Talk>
             </section>

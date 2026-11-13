@@ -205,9 +205,31 @@ body {
   }
 
   .page-links {
-    justify-content: center;
-    margin: 28px 0 0;
-    font-size: 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(8px, 3vw, 32px);
+    max-width: 720px;
+    margin: 36px auto 0;
+    font-size: clamp(1.125rem, 3vw, 1.5rem);
+  }
+}
+
+.landing-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
+  align-items: center;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 28px auto 0;
+}
+
+.landing-introduction {
+  min-width: 0;
+  text-align: left;
+
+  h1 {
+    margin: 0 0 24px;
+    line-height: 1.2;
   }
 }
 
@@ -215,7 +237,7 @@ body {
   display: block;
   width: min(100%, 360px);
   height: auto;
-  margin: 28px auto 0;
+  margin: 0 auto;
 }
 
 .talks-page {
@@ -259,7 +281,7 @@ body {
   a {
     display: inline-block;
     padding: 8px 0;
-    color: #154a80;
+    color: #000;
     text-underline-offset: 3px;
   }
 }
@@ -268,15 +290,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  padding: 12px 20px;
+  gap: 16px;
+  padding: 24px 4px;
+  white-space: nowrap;
   color: inherit;
   text-underline-offset: 3px;
 }
 
 .navigation-icon {
-  width: 64px;
-  height: 64px;
+  width: clamp(80px, 12vw, 112px);
+  height: clamp(80px, 12vw, 112px);
   object-fit: contain;
 }
 
@@ -295,6 +318,16 @@ body {
   a {
     display: inline-block;
     margin: 0 24px 8px 0;
+  }
+
+  .talk-thumbnail {
+    display: block;
+    max-width: 640px;
+    margin: 0 0 16px;
+
+    img {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -324,23 +357,10 @@ body {
   }
 }
 
-.contact-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 16px;
-  color: inherit;
-  text-underline-offset: 3px;
-
-  img {
-    object-fit: contain;
-  }
-}
-
 .landing-summary {
-  width: fit-content;
+  min-width: 0;
   max-width: 100%;
-  margin: 24px auto 0;
+  margin: 0;
   text-align: left;
 
   h2 {
@@ -355,5 +375,17 @@ body {
 
   li {
     margin: 4px 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .landing-intro {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .landing-summary {
+    width: fit-content;
+    margin: 0 auto;
   }
 }

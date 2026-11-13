@@ -7,8 +7,10 @@ pub fn general() -> Html {
     html! {
         <div class="general landing">
             <div class="landing-content">
-                <h1>{"Hey there! The name's Oleg"}</h1>
+                <div class="landing-intro">
                 <img class="landing-photo" src="assets/images/profile.png" alt="Oleg Sidorenkov" />
+                <div class="landing-introduction">
+                <h1>{"Hey there! The name's Oleg"}</h1>
                 <section class="landing-summary" aria-labelledby="tldr-heading">
                     <h2 id="tldr-heading">{"TL; DR:"}</h2>
                     <ul>
@@ -21,10 +23,8 @@ pub fn general() -> Html {
                         <li>{"Ops: Linux, FreeBSD, Shell, Kubernetes, Terraform, Vault"}</li>
                     </ul>
                 </section>
-                <a class="contact-link" href="https://t.me/olegdayo">
-                    <img src="assets/images/telegram.png" alt="" width="32" height="32" />
-                    <span>{"Contact me"}</span>
-                </a>
+                </div>
+                </div>
                 <nav class="page-links" aria-label="Main navigation">
                     <Link<Route> to={Route::CV}>
                         <img class="navigation-icon" src="assets/images/cv.png" alt="" />
@@ -34,6 +34,10 @@ pub fn general() -> Html {
                         <img class="navigation-icon" src="assets/images/microphone.png" alt="" />
                         <span>{"Talks"}</span>
                     </Link<Route>>
+                    <a href="https://t.me/olegdayo">
+                        <img class="navigation-icon" src="assets/images/telegram.png" alt="" />
+                        <span>{"Chat"}</span>
+                    </a>
                 </nav>
             </div>
             <footer class="visitors">
