@@ -42,6 +42,7 @@ pub fn general() -> Html {
             </div>
             <footer class="visitors">
                 <img alt="Visitors' count" src="https://count.getloli.com/get/@olegdayo?theme=gelbooru" />
+                <h2>{"Visitors' count"}</h2>
             </footer>
         </div>
     }
