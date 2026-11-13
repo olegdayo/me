@@ -216,7 +216,7 @@ pub fn cv() -> Html {
 
                 <section>
                     <h2>{"Languages"}</h2>
-                    {points(&[html! { <>{"🇷🇺 Russian, native"}</> }, html! { <>{"🇬🇧 English, C1, "}<a href="https://drive.google.com/file/d/1k4lelwvUKgJsic1ozDnYsN4PFMYLvqde/view?usp=sharing">{"Academic IELTS – 7.5/9"}</a></> }])}
+                    {points(&[html! { <>{"🇷🇺 Russian, native"}</> }, html! { <>{"🇬🇧 English, C1, "}<a href="https://drive.google.com/file/d/1k4lelwvUKgJsic1ozDnYsN4PFMYLvqde/view?usp=sharing">{"Academic IELTS – 7.5 / 9"}</a></> }])}
                 </section>
                 </div>
             </article>
