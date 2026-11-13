@@ -13,11 +13,12 @@ pub fn general() -> Html {
                     <h2 id="tldr-heading">{"TL; DR:"}</h2>
                     <ul>
                         <li>{"Senior SWE / Tech Lead at VK Cloud KMS"}</li>
-                        <li>{"HSE BSc + MSc SE alumni"}</li>
-                        <li>{"HSE OS instructor"}</li>
-                        <li>{"OSS contributor"}</li>
-                        <li>{"Dev: Go; Rust; PostgreSQL; Kafka"}</li>
-                        <li>{"Ops: Linux; FreeBSD; Shell; Kubernetes; Terraform; Vault"}</li>
+                        <li>{"HSE (Higher School of Economics) MSc in Software Engineering"}</li>
+                        <li>{"HSE Operating Systems course instructor"}</li>
+                        <li>{"Open-source contributor: Vault, Terraform, K8s stuff"}</li>
+                        <li>{"Public speaker at IT conferences, tech writer: Go, UNIX"}</li>
+                        <li>{"Dev: Go, Rust, PostgreSQL, Kafka"}</li>
+                        <li>{"Ops: Linux, FreeBSD, Shell, Kubernetes, Terraform, Vault"}</li>
                     </ul>
                 </section>
                 <a class="contact-link" href="https://t.me/olegdayo">
